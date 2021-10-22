@@ -90,9 +90,7 @@ main > header {
     width: 155px;
     font-size: 12px;
     display:inline-table
-    text-align: center;
-    
-    
+    text-align: center; 
 }
 
 .preco p {
@@ -117,8 +115,7 @@ main > header {
     display:flex
     justify-content: center;
     text-align: center;
-    
-    
+    cursor: pointer;
     
 }
 

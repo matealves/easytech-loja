@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Easy Tech</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+}
+
+
+
+        body {
+            background: linear-gradient(45deg, #ff9162, #ff4c00);
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            min-width: 0vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+        }
+
+        #logo2 {
+            text-align: center;
+            height: 14vh;
+        }
+
+        main.container {
+            background: white;
+            min-width: 320px;
+            min-height: 75vh;
+            padding: 2rem;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+        }
+
+
+        .input-field {
+            position: relative;
+        }
+
+        form .input-field:first-child {
+            margin-top: 1.5rem;
+        }
+
+        form .input-field {
+            margin-bottom: 1.5rem;
+            
+        }
+
+        .input-field .underline::before {
+            content: '';
+            position: absolute;
+            height: 1px;
+            width: 100%;
+            bottom: -5px;
+            left: 0;
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .input-field .underline::after {
+            content: '';
+            position: absolute;
+            height: 1px;
+            width: 100%;
+            bottom: -5px;
+            left: 0;
+            background: linear-gradient(45deg, #ff9162, #ff4c00);
+            transform: scaleX(0);
+            transition: all .2s ease-in-out;
+            transform-origin: left;
+        }
+
+        .input-field input:focus~.underline::after {
+            transform: scaleX(1);
+        }
+
+        .input-field input {
+            outline: none;
+            font-size: 0.9rem;
+            color: rgba(0, 0, 0, 0.5)
+        }
+
+        form input[type="submit"] {
+            margin-top: 2rem;
+            padding: 0.4rem;
+            background-color: #ff4c00;
+            color: #ffffff;
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: 300;
+            width: 130px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+
+        }
+
+        form input[type="reset"] {
+            
+            margin-top: 2rem;
+            padding: 0.4rem;
+            background-color: #ff4c00;
+            color: #ffffff;
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: 300;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+
+        }
+
+        form input[type="button"] {
+            
+            margin-top: 2rem;
+            padding: 0.4rem;
+            background-color: #ff4c00;
+            color: #ffffff;
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: 300;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+
+        }
+
+
+        form input[type="submit"]:hover {
+            letter-spacing: 0.5px;
+            background: linear-gradient(45deg, #ff9162, #ff4c00);
+        }
+
+        form input[type="reset"]:hover {
+            letter-spacing: 0.5px;
+            background: linear-gradient(45deg, #ff9162, #ff4c00);
+        }
+
+        form input[type="button"]:hover {
+            letter-spacing: 0.5px;
+            background: linear-gradient(45deg, #ff9162, #ff4c00);
+        }
+
+        .footer {
+            display: inline;
+            flex-direction: column;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <div id="logo2">
+            <header>
+                <picture>
+                    <a href="index.html">
+                        <img src="img/logo-150.png" alt="logo">
+                    </a>
+                </picture>
+            </header>
+    <form name="f_aula" method="post" action="cadastro.php">
+        <!--method pode ser get que faz envio explicito dos dados pela barra de endereço ou post que é o mais discreto, o action informa quem vai receber o formulario-->
+
+        <div class="input-field">
+            <input type="text" name="f_nome" size="40" maxlength="35" placeholder="Nome completo">
+            <div class="underline"></div>
+        </div>
+        <!--funcao nome com tamnho 40 caracteres, maxlength limita em 30 a qtdade de caracteres q pode usar-->
+        <div class="input-field">
+            <input type="text" name="f_email" size="40" maxlength="35" placeholder="E-mail">
+            <div class="underline"></div>
+        </div>
+
+        <div class="input-field">
+            <input type="password" name="f_senha" size="40" maxlength="20" placeholder="Senha">
+            <div class="underline"></div>
+        </div>
+        <div class="input-field">
+            <input type="password" name="f_senha1" size="40" maxlength="20" placeholder="Confirmar senha">
+            <div class="underline"></div>
+        </div>
+        <div class="input-field">
+            <input type="text" name="f_cpf" size="40" maxlength="11" placeholder="CPF">
+            <div class="underline"></div>
+        </div>
+        <!-- <input type="number" name="f_CPF" size="15" maxlength="11" /><br /><br />-->
+        <div class="input-field">
+            <input type="text" name="f_cpf" size="40" maxlength="8" placeholder="CEP">
+            <div class="underline"></div>
+        </div>
+
+        <!--  <input type="number" name="f_CEP" size="12" maxlength="7" /><br /><br />-->
+
+        <input type="submit" value="Cadastrar">
+        <!--botao cadastrar, criamos o class="bt para formatação somente dos botoes"-->
+        <input type="reset" value="Limpar">
+        <!--botao limpar dados-->
+        <a href="index.html">
+        <input type="button" value="Voltar">
+    </a>
+    
+    </form>
+    
+    </div>
+    </div>
+</div>
+
+
+</main>
+</body>
+
+</html>
