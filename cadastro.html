@@ -24,6 +24,7 @@
         body {
             background: linear-gradient(45deg, #ff9162, #ff4c00);
             background-repeat: no-repeat;
+           
             min-height: 100vh;
             min-width: 0vw;
             display: flex;
@@ -33,6 +34,7 @@
 
         }
 
+
         #logo2 {
             text-align: center;
             height: 14vh;
@@ -40,7 +42,7 @@
 
         main.container {
             background: white;
-            min-width: 320px;
+            min-width: 380px;
             min-height: 75vh;
             padding: 2rem;
             box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
@@ -50,6 +52,7 @@
 
         .input-field {
             position: relative;
+        
         }
 
         form .input-field:first-child {
@@ -88,7 +91,12 @@
             transform: scaleX(1);
         }
 
+        .input-field {
+            text-align: left;
+        }
+
         .input-field input {
+         
             outline: none;
             font-size: 0.9rem;
             color: rgba(0, 0, 0, 0.5)
@@ -174,30 +182,30 @@
         <!--method pode ser get que faz envio explicito dos dados pela barra de endereço ou post que é o mais discreto, o action informa quem vai receber o formulario-->
 
         <div class="input-field">
-            <input type="text" name="f_nome" size="40" maxlength="35" placeholder="Nome completo">
+            <input type="text" name="f_nome" size="30" maxlength="35" placeholder="Nome completo">
             <div class="underline"></div>
         </div>
         <!--funcao nome com tamnho 40 caracteres, maxlength limita em 30 a qtdade de caracteres q pode usar-->
         <div class="input-field">
-            <input type="text" name="f_email" size="40" maxlength="35" placeholder="E-mail">
+            <input type="text" name="f_email" size="30" maxlength="35" placeholder="E-mail">
             <div class="underline"></div>
         </div>
 
         <div class="input-field">
-            <input type="password" name="f_senha" size="40" maxlength="20" placeholder="Senha">
+            <input type="password" name="f_senha" size="30" maxlength="20" placeholder="Senha">
             <div class="underline"></div>
         </div>
         <div class="input-field">
-            <input type="password" name="f_senha1" size="40" maxlength="20" placeholder="Confirmar senha">
+            <input type="password" name="f_senha1" size="30" maxlength="20" placeholder="Confirmar senha">
             <div class="underline"></div>
         </div>
         <div class="input-field">
-            <input type="text" name="f_cpf" size="40" maxlength="11" placeholder="CPF">
+            <input type="text" name="f_cpf" size="30" maxlength="11" placeholder="CPF">
             <div class="underline"></div>
         </div>
         <!-- <input type="number" name="f_CPF" size="15" maxlength="11" /><br /><br />-->
         <div class="input-field">
-            <input type="text" name="f_cpf" size="40" maxlength="8" placeholder="CEP">
+            <input type="text" name="f_cpf" size="30" maxlength="8" placeholder="CEP">
             <div class="underline"></div>
         </div>
 
