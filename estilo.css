@@ -36,7 +36,7 @@ main {
 }
 
 footer {
-    background: #ff4c00;
+    background: #2d81c5;
     color: #ffffff;
     padding-top: 50px;
     padding: 40px;
@@ -46,7 +46,7 @@ footer {
 
 /* NAV */
 nav {
-    background: #ff4d00;
+    background: #2d81c5;
     font-size: 4px;  
 }
 
@@ -70,7 +70,7 @@ nav ul li a {
 
 /* MAIN */
 main > header {
-    color: #ff4c00;
+    color: #2d81c5;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', sans-serif;
     font-weight: 800;
 }   
@@ -105,7 +105,7 @@ main > header {
      
  }
 .botao p {
-    background-color: #ff4c00;
+    background-color: #2d81c5;
     font-weight: 600;
     color: whitesmoke;
     height: 34px;px;
@@ -136,3 +136,96 @@ li:hover {
     text-align: center;
     justify-content:center
 }
+
+#produtos a {
+    text-decoration: none;
+    color: initial;
+}
+
+.title {
+    margin-bottom: 30px;
+    justify-content: center;
+    font-size: 20px;
+    text-align: left;
+}
+
+
+.corpo {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
+    font-size: 12px;
+    justify-content:center
+       }
+
+.corpo p{
+    margin-left: 10px;
+       }
+
+.conteudo {
+    text-align: center;
+    width: 400px;
+    flex-direction: row;
+     /*background-color: brown; */
+        }
+
+.imagem {
+        width: 200px;
+        display: table-cell;
+        text-align: center;
+    }
+
+.img:hover{
+    cursor: pointer;
+    zoom:140%;
+}
+
+.desc {
+    margin-top: 50px;
+}
+
+.preco2 p{
+    text-align: center;
+    font-size: 35px;
+}
+
+.pay1 {
+    margin-top: 60px;
+    /*background-color: brown;*/
+    width: 500px;
+    flex-direction: row;
+    font-size: 13px;
+    display:inline-table
+}
+
+.botao2 {
+display: flex;
+margin-bottom: 45px;
+margin-top: 15px;
+justify-content: center;
+}
+
+
+.botao2 p {
+    text-align: center;
+    background-color: #2d81c5;
+    font-weight: 600;
+    color: whitesmoke;
+    height: 34px;px;
+    width: 200px;;
+    padding: 6px 4px;
+    font-size: 13px;
+    cursor: pointer;
+    
+}
+
+.botao2 p:hover {
+    background-color: #2b2c2e;
+    color: whitesmoke;
+}
+
+
+@media (max-width: 400px) {
+    .corpo {
+      flex-direction: column;
+    }
