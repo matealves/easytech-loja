@@ -17,7 +17,6 @@ body {
 }
 
 #container {
-
     max-width: 100%;
     margin: 0 auto;
     text-align: center;
@@ -155,7 +154,7 @@ li:hover {
     flex-wrap: wrap;
     text-align: justify;
     font-size: 12px;
-    justify-content:center
+    justify-content:center;
        }
 
 .corpo p{
@@ -182,6 +181,7 @@ li:hover {
 
 .desc {
     margin-top: 50px;
+    width: 1000px;    
 }
 
 .preco2 p{
