@@ -39,8 +39,24 @@ footer {
     color: #ffffff;
     padding-top: 50px;
     padding: 40px;
-    font-size: 10px;
-    height: 4rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    width: 100%;
+    height: 0vh;
+    bottom:0;
+    left:0;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer a:hover{
+    color: rgb(251, 255, 0);
 }
 
 /* NAV */
@@ -126,6 +142,8 @@ main > header {
 li:hover {
     background-color: #2b2c2e;
     color: whitesmoke;
+    
+    
 }
 
 #produtos {
@@ -226,7 +244,7 @@ justify-content: center;
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 200px) {
     .corpo {
       flex-direction: column;
     }
