@@ -13,13 +13,13 @@
 </h3>
 
 <h4 align = "center">
-	Versão 1.1.6 - completa. ✅
+	Versão 1.1.7 - completa. ✅
 </h4>
 <br>
-<h2 align = "center">
+<h3 align = "center">
 <a href="https://htmlpreview.github.io/?https://github.com/matealves/easytech-loja/blob/main/index.html" target="_blank">Pré-vizualização - clique aqui!
 </a> 
-</h2>
+</h3>
 
 <br>
 
