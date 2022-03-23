@@ -90,7 +90,11 @@ main > header {
     font-weight: 800;
 }   
 
-.produto { margin-bottom: 20px;margin-top: 10px; }
+.produto { 
+    margin-bottom: 20px;
+    margin-top: 10px; 
+}
+
 .produto img {
     display: flex;
     flex-wrap: wrap;
@@ -104,7 +108,7 @@ main > header {
     height:50px;
     width: 155px;
     font-size: 12px;
-    display:inline-table
+    display:inline-table;
     text-align: center; 
 }
 
